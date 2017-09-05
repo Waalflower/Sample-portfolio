@@ -25,6 +25,10 @@
 
 
 <!--This is the CSS Section of the code-->
+/* Some of the notes were copy-pasted. This was due to losing my data 3 times over and not wanting to go through the same work again. All non-notes have been modified to be original. */
+
+
+/* Effects everything */
 body {
   margin: 0;
   padding-top: 50px;
@@ -46,6 +50,7 @@ body {
   padding: 0;
 }
 
+/* Affects duck logo in nav bar */
 .logo{
   display: inline-block;
   vertical-align: top;
@@ -81,6 +86,7 @@ body {
     background-color: #4CAF50;
     color: white;
 }
+/* Background for first div */
 #home{
       background: url("http://www.sunbeds4hire.co.uk/images/option3.jpg");
   background-repeat: no-repeat;
@@ -96,8 +102,10 @@ h1{
 p{
   padding-top: 10%;
 }
+/* My profile picture */
 #isame{
   float:right;
   border-radius:50%;
   padding-right:30px;
 }
+
