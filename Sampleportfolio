@@ -1,5 +1,6 @@
 <!--HTML Section of the code-->
 
+
 <body>
 <div class="topnav" id="myTopnav">
   <img class="logo" src="https://d30y9cdsu7xlg0.cloudfront.net/png/25368-200.png">
@@ -12,38 +13,70 @@
   
   <div id="home">
     <h1> Loren Ipsum Home </h1>
-    <img id="isame" src="https://lh3.googleusercontent.com/-_G3XieI-P7Y/AAAAAAAAAAI/AAAAAAAAAEY/AU_AGutjoWQ/s640/photo.jpg" alt="profile-picture" style="width:250px; height:250px;">
-   
-    
-    
-    
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <img id="isame" src="http://u.kanobu.ru/comments/images/56eb87ac-e6d3-4a64-a942-d65e5366e207.jpg" alt="profile-picture">
+   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
     </p>
   </div>
+ 
+  <div id="portfolio">
+    <h2>Loren Ipsum Portfolio keep going don't know</h2>
+    <div class="column1">
+      <img src="https://static.pexels.com/photos/87452/flowers-background-butterflies-beautiful-87452.jpeg" class="div2images" alt="flowers" style="width:250px; height: 250px;">
+      <img src="https://greenglobaltravel.com/wp-content/uploads/mount-kilimanjaro.jpg" class="div2images" alt="mountain" style="width:250px; height: 250px;">
+    </div>
+    
+    <div class="column2">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Santa_Rosa_CityBus_024.jpg" class="div2images" alt="city-bus" style="width:250px; height: 250px;">
+      <img src="https://i.pinimg.com/originals/cf/2d/e6/cf2de6b09da21d0b2744e0222ce0cc8a.jpg" class="div2images" alt="pirate-ship" style="width:250px; height: 250px;">
+    </div>
+  </div>
+  
+  <div id="about">
+    <h3> Loren Ipsum About </h3>
+    <div class="column1">
+      <form>
+        Name<br>
+        <input type="text" name="name" class="mytext"><br>
+        Email<br>
+        <input type="text" name="email" class="mytext"><br>
+        Phone Number<br>
+        <input type="text" name="phone" class="mytext"><br>
+        Message<br>
+        <textarea name="mymessage" class="mymessage" cols="40" rows="5"></textarea>
+       <input type="submit" value="Submit" class="mytext mysubmit">
+        </div>
+      </form>
+    <div class="column2">
+      <p> asd;fkljjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;kkjl;asdjfkl;adsjfkljaslk;dfjaskl;dfjlask;djf;lkasjdf</p>
+      <p> as;kldfj;klasdjf;ajsd;lfkjdsaf;kljsad;klj</p>
 </body>
+
 
 
 <!--This is the CSS Section of the code-->
 /* Some of the notes were copy-pasted. This was due to losing my data 3 times over and not wanting to go through the same work again. All non-notes have been modified to be original. */
 
 
+/* Some of the notes were copy-pasted. This was due to losing my data 3 times over and not wanting to go through the same work again. All non-notes have been modified to be original. */
+
+
 /* Effects everything */
 body {
   margin: 0;
-  padding-top: 50px;
+  background-color: #2a3439;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #EDC9AF;
+  background-color: #7851A9;
   overflow: hidden;
   width: 100%;
   height: 70px;
   top: 0;
   left: 0;
   right: 0;
-  position: absolute;
+  position: fixed;
   border-width: 1px;
   border-style: solid;
   margin: 0;
@@ -59,6 +92,7 @@ body {
   margin-right: 20px;
   margin-top: 10px;
   float: right;
+  margin-right: 7%;
   
  
 }
@@ -72,7 +106,7 @@ body {
     text-decoration: none;
     font-size: 17px;
     text-transform: uppercase;
-  
+    margin-left: 7%;  
 }
 
 /* Change the color of links on hover */
@@ -87,25 +121,74 @@ body {
     color: white;
 }
 /* Background for first div */
-#home{
-      background: url("http://www.sunbeds4hire.co.uk/images/option3.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border: 1px;
-  background-style: solid;
-  background-size: cover;
+div {
+  height: 750px;
 }
-h1{
+
+#home{
+      background: url("http://cdn.pcwallart.com/images/plain-blue-background-wallpaper-3.jpg");
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  margin-left:7.5%;
+  margin-right:7.5%;
+  background-style: solid;
+  background-position:center;
+}
+h1, h2, h3{
   text-align: center;
-  
+  padding-top: 3%;
 }
 p{
-  padding-top: 10%;
+  padding: 10%;
+  text-align: left;
+  word-wrap: break-word;
+  font-size: 30px;
 }
 /* My profile picture */
 #isame{
   float:right;
-  border-radius:50%;
-  padding-right:30px;
+  margin-right:10%;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  padding: 30px;
 }
 
+/* Second div work process here */
+/* Cannot remove white space between "home" and "portfolio".*/
+#portfolio{
+  background-color: grey;
+  background-size: 85%;
+  background-position: center;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+
+}
+/*Columns for pictures*/
+.column1, .column2{
+  text-align: center;
+  float: left;
+  width: 50%;
+}
+.div2images{
+  margin-top: 4%;
+  border-style: solid;
+  border-color: #5f9ea0;
+  border-width: 20px;
+  border-radius: 5%;
+}
+/* About Section */
+#about{
+  background-color: grey;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+.mytext{
+  width: 300px;
+  height: 50px;
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+.mysubmit{
+  margin-top: 30%;
+}
