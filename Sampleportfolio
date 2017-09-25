@@ -1,13 +1,29 @@
 <!--HTML Section of the code-->
 
 
+
+
+
+<head>
+  <title>My Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+  <!--Social Media Icon Library-->
+  
+  
+  
+</head>
+
+
 <body>
 <div class="topnav" id="myTopnav">
   <img class="logo" src="https://d30y9cdsu7xlg0.cloudfront.net/png/25368-200.png">
   <a href="#home">Home</a>
   <a href="#portfolio">Portfolio</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
+  <a href="#about">contact</a>
+  <a href="#contact">media</a>
   
 </div>
   
@@ -36,28 +52,42 @@
     <h3> Loren Ipsum About </h3>
     <div class="column1">
       <form>
-        Name<br>
-        <input type="text" name="name" class="mytext"><br>
-        Email<br>
-        <input type="text" name="email" class="mytext"><br>
-        Phone Number<br>
-        <input type="text" name="phone" class="mytext"><br>
-        Message<br>
+        <br>
+        <input type="text" name="name" class="mytext" value="Name"><br>
+        <br>
+        <input type="text" name="email" class="mytext" value="Email"><br>
+        <br>
+        <input type="text" name="phone" class="mytext" value="Phone Number"><br>
+       <hr class="linestyle">
+        <p>Message Me:</p>
         <textarea name="mymessage" class="mymessage" cols="40" rows="5"></textarea>
-       <input type="submit" value="Submit" class="mytext mysubmit">
+       <input type="submit" value="Submit" class="mytext">
         </div>
       </form>
     <div class="column2">
       <p> asd;fkljjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;kkjl;asdjfkl;adsjfkljaslk;dfjaskl;dfjlask;djf;lkasjdf</p>
       <p> as;kldfj;klasdjf;ajsd;lfkjdsaf;kljsad;klj</p>
-</body>
 
+    </div>
+    
+      <div class="footer" id="footerz">
+        <div class="footerleft"> This page was made by Scott
+        </div>
+        
+        <div class="footerright">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-foursquare"></a>
+        </div>
+        
+        
+        
+      </div>
+      </body>
 
 
 <!--This is the CSS Section of the code-->
-/* Some of the notes were copy-pasted. This was due to losing my data 3 times over and not wanting to go through the same work again. All non-notes have been modified to be original. */
-
-
 /* Some of the notes were copy-pasted. This was due to losing my data 3 times over and not wanting to go through the same work again. All non-notes have been modified to be original. */
 
 
@@ -65,22 +95,18 @@
 body {
   margin: 0;
   background-color: #2a3439;
+  font-size: 
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #7851A9;
+  background-color: purple;
   overflow: hidden;
   width: 100%;
   height: 70px;
-  top: 0;
-  left: 0;
-  right: 0;
   position: fixed;
   border-width: 1px;
   border-style: solid;
-  margin: 0;
-  padding: 0;
 }
 
 /* Affects duck logo in nav bar */
@@ -97,7 +123,7 @@ body {
  
 }
 /* Style the links inside the navigation bar */
-.topnav a {
+.topnav a{
     float: left;
     display: inline-block;
     color: black;
@@ -106,23 +132,79 @@ body {
     text-decoration: none;
     font-size: 17px;
     text-transform: uppercase;
-    margin-left: 7%;  
+    margin-left: 7%; 
+    border-radius: 50%;
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #ddd;
+.topnav a:hover{
+    background-color: #DF73FF;
     color: black;
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.topnav a.active{
     background-color: #4CAF50;
     color: white;
 }
-/* Background for first div */
+
+/* Footer for webpage */
+#footerz {
+  background-color: purple;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  border-width: 1px;
+  border-style: solid;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  margin-bottom: -2371px!important;
+  text-align: center;
+}
+.footerleft{
+  width: 49%;
+  float: left;
+  display: inline;
+  font-size: 35px;
+  margin-top: 30px;
+  color: #FFDEAD;
+}
+.footerright{
+  width:49%;
+  float: right;
+  display: inline;
+}
+.fa {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-display: inline-block;
+  text-decoration: none;
+  color: white;
+  float: right;
+  margin-right: 5%;
+  margin-top: 25px;
+  border-radius: 50%; 
+}
+.fa:hover {
+  opacity: 0.7
+}
+.fa-facebook {
+  background: #3B5998;
+}
+.fa-google {
+  background: #dd4b39;
+}
+.fa-youtube {
+  background: #bb0000;
+}
+.fa-foursquare {
+  background: #f40083
+}
+/* Background for first div. Height for all div backgrounds is adjusted with "div" CSS */
 div {
-  height: 750px;
+  height: 800px;
 }
 
 #home{
@@ -137,12 +219,15 @@ div {
 h1, h2, h3{
   text-align: center;
   padding-top: 3%;
+  color: #FFDEAD;
+  font-size: 30px;
 }
 p{
   padding: 10%;
   text-align: left;
   word-wrap: break-word;
   font-size: 30px;
+  color: #FFDEAD;
 }
 /* My profile picture */
 #isame{
@@ -157,7 +242,7 @@ p{
 /* Second div work process here */
 /* Cannot remove white space between "home" and "portfolio".*/
 #portfolio{
-  background-color: grey;
+  background-color: #B768A2;
   background-size: 85%;
   background-position: center;
   margin-left: 7.5%;
@@ -173,11 +258,11 @@ p{
 .div2images{
   margin-top: 4%;
   border-style: solid;
-  border-color: #5f9ea0;
+  border-color: #4E2A84;
   border-width: 20px;
   border-radius: 5%;
 }
-/* About Section */
+/* About Section, or section 3 */
 #about{
   background-color: grey;
   margin-left: 7.5%;
@@ -187,8 +272,47 @@ p{
   width: 300px;
   height: 50px;
   font-size: 30px;
-  margin-bottom: 3%;
+  color: #FFDEAD;
 }
-.mysubmit{
-  margin-top: 30%;
+/* Mess around with input buttons and animations */
+input{ 
+  border: none;
+  background: transparent;
+  outline: none;
 }
+input:focus{
+  border: 3px solid #555;
+  padding: 5px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+textarea{
+  background: #BEBEBE;
+  resize: none;
+}
+.linestyle:before{
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: 10%;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+  border-radius: 20px;
+  border-color: #FFDEAD;
+  margin-top: -31px;
+  
+}
+.linestyle{
+  height: 30px;
+  border-style: solid;
+  border-width: 1px 0 0 0 ;
+  border-radius: 20px;
+  margin-left: 5%;
+  border-color: #FFDEAD;
+}
+
+/*Footer section and contact info*/
+
